@@ -18,22 +18,22 @@ From the data set in step 4, creates a second, independent tidy data set with th
 ##########################################################################################################
 
 # see what my current directory is
-> getwd()
+ getwd()
 [1] "C:/Users/skhan/Documents"
 
 # clear my current working environment start fresh
-> rm(list=ls())
+ rm(list=ls())
 
 # I am setting the working directory to where i downloaded and unzipped the project files
-> setwd('C:/Users/skhan/Documents/Saj/Data Science/Getting Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/')
+ setwd('C:/Users/skhan/Documents/Saj/Data Science/Getting Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/')
 
 # check if my command worked to set directory
-> getwd()
+ getwd()
 [1] "C:/Users/skhan/Documents/Saj/Data Science/Getting Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset"
 
 # inspect element in the folder
 
-> list.files(getwd())
+ list.files(getwd())
 [1] "activity_labels.txt" "features.txt"        "features_info.txt"   "README.txt"          "test"                "train"   
 
 # Lets us read the data from the files in the working directory
